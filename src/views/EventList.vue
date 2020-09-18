@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Events Listing</h1>
-    <EventCard v-for="event in events" :key="event.id" :event="event"/>
+    <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
 
@@ -11,21 +11,21 @@ import EventService from '@/services/EventService.js'
 
 export default {
   components: {
-    EventCard
+    EventCard,
   },
   data() {
     return {
-      events: []
+      events: [],
     }
   },
   created() {
     EventService.getEvents()
-      .then(response => {
+      .then((response) => {
         this.events = response.data
       })
-      .catch(error => {
+      .catch((error) => {
         console.log('There was an error:', error.response)
       })
-  }
+  },
 }
 </script>
