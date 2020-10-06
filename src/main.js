@@ -28,6 +28,6 @@ requireComponent.keys().forEach(fileName => {
 
 new Vue({
   router,
-  store,
+  store, // <-- injecting store for global access
   render: h => h(App)
 }).$mount('#app')
