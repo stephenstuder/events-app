@@ -11,15 +11,10 @@
   </div>
 </template>
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 export default {
   computed: {
-    catLength() {
-      return this.$store.getters.catLength
-    },
-    // getEvent() {
-    //   return this.$store.getters.getEventById
-    // },
+    ...mapGetters(['catLength']),
     ...mapState(['user', 'categories']), //<-- spread operator allows for other computed properties
   },
 }
