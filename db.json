@@ -127,6 +127,34 @@
       "date": "2020-10-08T17:03:00.000Z",
       "time": "14:00",
       "attendees": []
+    },
+    {
+      "id": 6800072,
+      "category": "food",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Makenna is a snack",
+      "description": "I am going to eat her",
+      "location": "Queen Creek",
+      "date": "2020-10-18T17:43:00.000Z",
+      "time": "10:00",
+      "attendees": []
+    },
+    {
+      "id": 5167857,
+      "category": "housing",
+      "organizer": {
+        "id": "abc123",
+        "name": "Stephen Studer"
+      },
+      "title": "Makenna has a cool house",
+      "description": "Just look at it, its awesome",
+      "location": "Queen creek",
+      "date": "2020-10-01T17:45:00.000Z",
+      "time": "9:00",
+      "attendees": []
     }
   ]
 }
