@@ -82,5 +82,8 @@ export default {
 </script>
 
 
-<style lang="scss" scoped>
+<style scoped>
+.field {
+  margin-bottom: 24px;
+}
 </style>
