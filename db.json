@@ -71,6 +71,62 @@
           "name": "Mary Gordon"
         }
       ]
+    },
+    {
+      "id": 6401577,
+      "category": "food",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Burger time",
+      "description": "We all eat a burger",
+      "location": "Queen Creek",
+      "date": "2020-10-14T16:53:00.000Z",
+      "time": "15:00",
+      "attendees": []
+    },
+    {
+      "id": 2582552,
+      "category": "animal welfare",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Test",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 9630479,
+      "category": "housing",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Test 2",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 2259320,
+      "category": "education",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Test 3",
+      "description": "This is a test",
+      "location": "Queen Creek",
+      "date": "2020-10-08T17:03:00.000Z",
+      "time": "14:00",
+      "attendees": []
     }
   ]
 }
