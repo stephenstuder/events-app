@@ -9,7 +9,8 @@ export default new Vuex.Store({
     user: { id: 'abc123', name: 'Stephen Studer' },
     categories: ['sustainability', 'nature', 'animal welfare', 'housing', 'education', 'food', 'community'],
     events: [],
-    eventsTotal: 0
+    eventsTotal: 0,
+    event: {}
   },
   mutations: {
     ADD_EVENT(state, event) {
@@ -20,6 +21,9 @@ export default new Vuex.Store({
     },
     GET_EVENT_TOTAL(state, eventTotal) {
       state.eventsTotal = eventTotal;
+    },
+    SET_EVENT(state, event) {
+      state.event = event;
     }
   },
   actions: {
@@ -37,6 +41,19 @@ export default new Vuex.Store({
         .catch((error) => {
           console.log('There was an error:', error.response)
         })
+    },
+    fetchEvent({ commit, getters }, id) {
+      var event = getters.getEventById(id)
+
+      if (event) {
+        commit('SET_EVENT', event)
+      } else {
+        EventService.getEvent(id).then(response => {
+          commit('SET_EVENT', response.data)
+        }).catch(error => {
+          console.log('There was an error', error.response)
+        })
+      }
     }
   },
   getters: {
