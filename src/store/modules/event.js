@@ -2,7 +2,6 @@ import EventService from '@/services/EventService.js'
 
 
 export const state = {
-    categories: ['sustainability', 'nature', 'animal welfare', 'housing', 'education', 'food', 'community'],
     events: [],
     eventsTotal: 0,
     event: {}

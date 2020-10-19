@@ -10,4 +10,7 @@ export default new Vuex.Store({
     user,
     event
   },
+  state: {
+    categories: ['sustainability', 'nature', 'animal welfare', 'housing', 'education', 'food', 'community'],
+  }
 })
