@@ -6,7 +6,7 @@
 
 Step 1: Clone the repository
 
-Step 2: Npm install
+Step 2: ```npm install```
 
 Step 3: Start the servers
 
