@@ -27,7 +27,7 @@ export default {
     EventCard,
   },
   created() {
-    this.$store.dispatch('fetchEvents', {
+    this.$store.dispatch('event/fetchEvents', {
       perPage: 3, // <-- How many items to display per page
       page: this.page, // What page we are on
     })
