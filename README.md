@@ -3,10 +3,15 @@
 <img src="src\assets\screenshot.JPG" alt="html image" width="1000"/>
 
 ## how to run 
+
 Step 1: Clone the repository
+
 Step 2: Npm install
+
 Step 3: Start the servers
+
 Step 3.1: ```json-server --watch db.json``` for mock database
+
 Step 3.2: ```npm run serve``` to run the vue project
 
 ## about this project
