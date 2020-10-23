@@ -29,7 +29,7 @@ export default {
   created() {
     this.$store.dispatch('event/fetchEvents', {
       perPage: 3, // <-- How many items to display per page
-      page: this.page, // What page we are on
+      page: this.page,
     })
   },
   computed: {
