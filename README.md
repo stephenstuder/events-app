@@ -2,7 +2,7 @@
 
 <img src="src\assets\screenshot.JPG" alt="html image" width="1000"/>
 
-## how to run
+## How to run
 
 Step 1: Clone the repository
 
