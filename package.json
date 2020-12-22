@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "serve-db": "json-server --watch db.json",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
@@ -11,6 +12,7 @@
   "dependencies": {
     "axios": "^0.18.1",
     "foundation-sites": "^6.6.3",
+    "nprogress": "^0.2.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuejs-datepicker": "^1.6.2",
