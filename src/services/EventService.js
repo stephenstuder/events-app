@@ -10,15 +10,17 @@ const apiClient = axios.create({
   }
 })
 
-apiClient.interceptors.request.use(config => {
-  nprogress.start()
-  return config
-})
+// apiClient.interceptors.request.use(config => {
+//   nprogress.start()
+//   return config
+// })
 
-apiClient.interceptors.response.use(response => {
-  nprogress.done()
-  return response
-})
+// apiClient.interceptors.response.use(response => {
+//   nprogress.done()
+//   return response
+// })
+
+//These interceptors fall short when more than one call is happening at a time.
 
 export default {
   getEvents(perPage, page) {
