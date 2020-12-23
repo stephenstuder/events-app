@@ -309,6 +309,20 @@
       "date": "",
       "time": "",
       "attendees": []
+    },
+    {
+      "id": 3619218,
+      "category": "animal welfare",
+      "organizer": {
+        "id": "abc123",
+        "name": "Stephen"
+      },
+      "title": "Puppy Picnic",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
     }
   ]
 }
