@@ -64,7 +64,6 @@ export default {
   },
   methods: {
     createEvent() {
-      NProgress.start()
       this.$store
         .dispatch('event/createEvent', this.event)
         .then(() => {
@@ -75,7 +74,6 @@ export default {
           this.event = this.createFreshEvent()
         })
         .catch(() => {
-          NProgress.done()
         })
     },
     createFreshEvent() {
