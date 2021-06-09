@@ -46,7 +46,6 @@
 </template>
     <script>
 import Datepicker from 'vuejs-datepicker'
-import NProgress from 'nprogress'
 
 export default {
   components: {
