@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400|Space+Mono:400');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+:root {
+  /* Define colors as colors */
+  --green: #00ebc7;
+  --red: #ff5470;
+  --yellow: #fde24f;
+  --black: #1b2d45;
+  --darkBlue: #00214d;
+  --grey: #bfbfbf;
+  --lightGrey: #f2f4f6;
+  --darkGrey: #222;
+  --white: #fff;
+  /* Define the colors intentions */
+  --primary: var(--green);
+  --danger: var(--red);
+  --background: var(--lightgrey);
+  --textColor: var(--black);
+  --buttonTextColor: var(--white);
+  --lineColor: var(--grey);
+  --cardBg: var(--white);
+  --headerBackground: var(--darkBlue);
+  --footerBackground: var(--black);
+
+  /* Styles */
+  --line: solid 1px var(--lineColor);
+
+  /* Type */
+  --headingFont: 'Space Mono', monospace;
+  --bodyFont: 'Work Sans', sans-serif;
+  --baseFontSize: 100%;
+  --h1: 3.052rem;
+  --h2: 2.441rem;
+  --h3: 1.953rem;
+  --h4: 1.563rem;
+  --h5: 1.25rem;
+  --smallText: 0.8rem;
+
+  /* Elevation */
+  --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level-4: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Positioning */
+  --containerPadding: 2.5%;
+  --headerHeight: 3rem;
+  --border-radius: 10px;
+}
+
+/* From Typescale */
+html {
+  font-size: var(--baseFontSize);
+  background: var(--lightGrey);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--bodyFont);
+  background: var(--background);
+  color: var(--textColor);
+  font-weight: 400;
+  line-height: 1.75;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: var(--headerHeight);
+  background: var(--headerBackground);
+  box-shadow: var(--level-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--containerPadding);
+}
+
+header nav a,
+header a {
+  color: var(--white);
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav a + a {
+  margin-left: 10px;
+}
+
+footer {
+  --footerTextColor: var(--lightGrey);
+  color: var(--footerTextColor);
+  background: var(--footerBackground);
+  padding: 2rem var(--containerPadding);
+  text-align: center;
+}
+
+footer a {
+  color: var(--footerTextColor);
+}
+
+a {
+  color: inherit;
+}
+
+footer p {
+  margin-bottom: 0;
+  max-width: none;
+}
+
+p {
+  margin-bottom: 1rem;
+  max-width: 40em;
+}
+
+p a,
+blockquote a {
+  color: var(--textColor);
+  text-decoration: none;
+  border-bottom: solid 2px var(--primary);
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+small,
+.text_small {
+  font-size: var(--smallText);
+}
+
+/* End Typescale */
+
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+blockquote {
+  margin: 10px;
+  padding: 2em;
+  background: var(--cardBg);
+  box-shadow: var(--level-3);
+}
+
+label {
+  display: block;
+  font-size: var(--smallText);
+}
+
+input,
+textarea {
+  padding: 4px 5px;
+  border: var(--line);
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  height: 5rem;
+}
+
+::placeholder {
+  color: var(--grey);
+}
+
+hr {
+  border-top: var(--line);
+}
+
+button {
+  --buttonColor: var(--primary);
+  appearance: none;
+  color: var(--buttonTextColor);
+  background: var(--buttonColor);
+  border: none;
+  border-radius: 10px;
+  padding: 5px 25px;
+  box-shadow: var(--level-1);
+  transition: 0.3s ease-in-out box-shadow;
+}
+
+button:hover {
+  box-shadow: var(--level-2);
+}
+
+button[disabled] {
+  opacity: 0.4;
+}
+
+button.cancel {
+  --buttonColor: var(--danger);
+  --textColor: var(--white);
+}
+
+button.small {
+  font-size: var(--smallText);
+}
+
+.layout {
+  padding: calc(3rem + var(--headerHeight)) var(--containerPadding);
+}
+
+.grid {
+  --gridCols: 2;
+  display: block;
+  grid-template-columns: repeat(var(--gridCols), 1fr);
+}
+
+.cols-3 {
+  --gridCols: 3;
+}
+
+.flex {
+  --justifyContent: space-between;
+  display: block;
+  justify-content: var(--justifyContent);
+}
+
+.flex-around {
+  --justifyContent: space-around;
+}
+
+.flex-justify-center {
+  --justifyContent: center;
+}
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.split {
+  display: block;
+  grid-template-columns: 33% 67%;
+  grid-gap: 20px;
+}
+@media only screen and (min-width: 500px) {
+  :root {
+    --baseFontSize: 112.5%;
+  }
+  .grid {
+    display: grid;
+  }
+  .flex {
+    display: flex;
+  }
+  .split {
+    display: grid;
+  }
+}
+
+.fake-logo {
+  margin: 0;
+  font-size: var(--baseFontSize);
+}
+
+.card {
+  padding: 1em;
+  margin: 1em;
+  background: var(--cardBg);
+  box-shadow: var(--level-3);
+  border-radius: var(--border-radius);
+}
+
+/* First item will never have margin top */
+.card > *:first-child {
+  margin-top: 0;
+}
+
+/* Last item will never have margin bottom */
+.card > *:last-child {
+  margin-top: 0;
+}
+
+.dark {
+  --background: var(--black);
+  --textColor: var(--lightGrey);
+  --blockQuote: var(--darkBlue);
+  --headerBackground: var(--darkGrey);
+  --cardBg: var(--darkGrey);
+  --buttonTextColor: var(--black);
+  --footerBackground: var(--darkGrey);
+}
+
+.oled {
+  --black: #000;
+}
+
+.theme {
+  /* Define colors as colors */
+  --green: #4fc4cf;
+  --red: #ff5470;
+  --yellow: #fbdd74;
+  --black: #181818;
+  --darkBlue: #994ff3;
+  --grey: #bfbfbf;
+  --lightGrey: #f2f4f6;
+  --darkGrey: #222;
+  --white: #fff;
+  /* Define the colors intentions */
+  --primary: var(--green);
+  --danger: var(--red);
+  --background: var(--yellow);
+  --textColor: var(--black);
+  --buttonTextColor: var(--white);
+  --lineColor: var(--grey);
+  --cardBg: var(--white);
+  --headerBackground: var(--black);
+  --footerBackground: var(--black);
+
+  /* Styles */
+  --line: dashed 5px var(--yellow);
+
+  /* Type */
+  --headingFont: 'Galada', cursive;
+  --bodyFont: 'Work Sans', sans-serif;
+  --baseFontSize: 100%;
+  --h1: 3.052rem;
+  --h2: 2.441rem;
+  --h3: 1.953rem;
+  --h4: 1.563rem;
+  --h5: 1.25rem;
+  --smallText: 0.8rem;
+
+  /* Elevation */
+  --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level-4: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Positioning */
+  --containerPadding: 2.5%;
+  --headerHeight: 4rem;
+  --border-radius: 25px;
+}

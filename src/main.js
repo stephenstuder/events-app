@@ -5,6 +5,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store/store'
 import BaseIcon from '@/components/BaseIcon.vue'
+import './assets/style.css'
 
 Vue.component('BaseIcon', BaseIcon)
 

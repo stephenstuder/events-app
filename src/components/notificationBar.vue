@@ -32,6 +32,3 @@ export default {
   methods: mapActions('notification', ['remove']),
 }
 </script>
-
-<style scoped>
-</style>
